@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Desktop Capture</title>
     <link rel="stylesheet" href="index.css">
     <link
       rel="stylesheet"
@@ -12,20 +12,24 @@
     <script defer src="render.js"></script>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to this Electron application.</p>
-    <p>The main functionality is to capture the screen and save it as video file.</p>
-  
+    <div class="content has-text-centered">
+      <h1 class="title">Desktop Capture Application</h1>
+      <p>Welcome to this Electron application.</p>
+      <p>The main functionality is to capture the screen and save it as video file.</p>
+    </div>
+
     <video></video>
-
-    <button id="startBtn" class="button is-primary">Start</button>
-    <button id="stopBtn" class="button is-warning">Stop</button>
-
+    <div class="box has-text-centered">
+      <button id="startBtn" class="button is-primary">Start</button>
+      <button id="stopBtn" class="button is-warning">Stop</button>
+    </div>
     <hr />
 
-    <button id="videoSelectBtn" class="button is-text">
-      Choose a Video Source
-    </button>
+    <div class="box has-text-centered">
+      <button id="videoSelectBtn" class="button is-text">
+        Choose a Video Source
+      </button>
+    </div>
 
   </body>
 </html>
